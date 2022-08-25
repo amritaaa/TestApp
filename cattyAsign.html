@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment-2</title>
+<link rel="stylesheet" type="text/css" href="articleStyle.css">
+</head>
+<body>
+	<header> </header>
+    <div id="formContainer">
+	<form>
+		<h3>Registration Form</h3>
+		<fieldset>
+			<legend>Company Details</legend>
+            <div class="row">
+			<label for="companyName">Company Name :</label> <input type="text"
+				id="companyName" name="companyName" required></div><div class="row"> <label
+				for="companyType">Company Type :</label> <Select id="companyName"
+				name="companyName">
+				<option value="Goverment Department">Goverment Department</option>
+				<option value="Individual">Individual</option>
+				<option value="Private Limited">Private Limited</option>
+				<option value="Partnership Firm">Partnership Firm</option>
+				<option value="Society">Society</option>
+				<option value="Joint Venture">Joint Venture</option>
+				<option value="public Limited">public Limited</option></Select></div>
+                <div class="row"> <label for="companyRegDate">Company Registration Date :</label><input type="date"
+				id="companyRegDate" name="companyRegDate" min="2010-01-01"> </div>
+                <div class="row"><label for="regCertificate">Company Registration Certificate :</label> 
+                <input type="file" name="regCertificate" id="regCertificate" accept="application/pdf"></div>
+                <div class="row"><label for="startUpCheck">Are you a startup company ?</label> <input type="radio" id="startUp" value="Yes" name="startUpCheck"><label for="startUp">Yes</label>
+                <input type="radio" id="notStartUp" value="No" name="startUpCheck"><label for="notStartUp">No</label></div>
+                <div class="row"><label for="companyWebsite">URL of your company's website (if any) :</label> <input type="url"
+				id="companyWebsite" name="companyWebsite"></div>
+			</Select>
+            
+		</fieldset>
+		<fieldset>
+			<legend>Primary Contact Person Details</legend>
+			<div class="row"><label for="contactPersonName">Contact Person Name :</label>
+            <input type="checkbox" id="contactPersonAddressing1" value="Yes" name="contactPersonAddressing"><label for="contactPersonAddressing1">Mr.</label>
+            <input type="checkbox" id="contactPersonAddressing2" value="Yes" name="contactPersonAddressing"><label for="contactPersonAddressing2">Miss.</label>
+            <input type="checkbox" id="contactPersonAddressing3" value="Yes" name="contactPersonAddressing"><label for="contactPersonAddressing3">Mrs.</label>
+            <input type="text"
+				id="contactPersonName" name="contactPersonName" placeholder="Enter contact person's full name here"></div>
+             
+                <div class="row"><label for="companyName">Mobile Number :</label> <input type="tel"
+				id="companyName" name="companyName" required></div><div class="row"><label
+				for="emailId">Email Id :</label> <input type="email" id="emailId"
+				name="emailId" required></div>   
+        </fieldset>
+        <fieldset>
+			<legend>Official Address Details</legend>
+			<div class="row"><label for="addressLine1">House No./Floor/Building :</label><input type="text"
+            id="addressLine1" name="addressLine1"></div>
+            <div class="row"><label for="addressLine2">Colony/Street/Locality : </label><input type="text"
+            id="addressLine2" name="addressLine2"></div>
+            <div class="row"><label for="landmark">Landmark (if any) : </label><input type="text"
+            id="landmark" name="landmark"></div>
+            <div class="row"><label for="pinCode">Pin code : </label><input type="number"
+            id="pinCode" name="pinCode"></div>
+            <div class="row"><label
+				for="state">State :</label> <Select id="state"
+				name="state">
+                <option value="Karnataka">Karnataka</option>
+				<option value="Maharastra">Maharastra</option>
+				<option value="kerala">Kerala</option>
+				<option value="WB">West Bengal</option>
+			</Select></div>
+        </fieldset>
+        <fieldset>
+			<legend>Create User Credential</legend>
+			<div class="row"><label for="userId">User-Id :</label><input type="text"
+            id="userId" name="userId"></div>
+            <div class="row">
+			<label for="password">Password :</label><input type="password"
+            id="password" name="password"></div>
+        </fieldset>
+	</form></div>
+</body>
+</html>
