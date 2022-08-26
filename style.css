@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+  }
+  img{
+        float:left;
+        max-width: 20vw;
+        height: auto;
+        margin:10px;
+   }
+
+  legend {
+    background-color: #117a80;
+    color: white;
+    padding: 5px 10px;
+  }
+  fieldset {
+    background-color:white;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 15px;
+  }
+  input,select{
+    padding: 12px;
+    border: 1px solid #2e7b66;
+    border-radius: 8px;
+    resize: vertical;
+  }
+  
+  input[type=text],select{
+    width: 60%;
+    
+  }
+
+  input[type=tel],input[type=email],input[type=url],input[type=number],input[type=password],input[type=date],select, textarea {
+    width: 30%;
+  }
+  #userId{
+    width: 30%;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  .buttonRow{
+    text-align: center;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    margin:2px;
+  }
+  input[type=reset] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  input[type=submit]:hover {
+    background-color: darkgreen;
+  }
+  input[type=reset]:hover {
+    background-color: orangered;
+  }
+  
+  #formContainer {
+    border-radius: 5px;
+    background-color: #f7e0e0;
+    padding: 20px;
+    /* width: 70vw; */
+  }
+  .regForm{
+    width:70vw;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .personName{
+    display: flex;
+  }
+
+  input:invalid:focus,select:invalid:focus{
+    box-shadow: 0 0 5px 1px red;
+  }
+
+  .important{
+    color:red;
+  }
+
+  .formHeading{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #3363b9;
+  }
+
+  #articleContainer {
+    display: grid;
+    background-color: #ffdfa2;
+    padding:1vh;
+    margin:1vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 12vh 5vh 1fr;
+    column-gap: 2vw;
+  }
+
+  .articleHeading{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #3363b9;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 1vh;
+    font-weight: bold;
+  }
+  .articleTitle{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #b10505;
+
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+     #articleContainer {
+        grid-template-rows: 12vh 12vh 1fr;
+    } 
+  }
+
+  header{
+   
+        background-color: black;
+        padding: 1vh;
+        color: white;
+        width:100vw;
+        text-align: center;    
+  }
+  h2{
+    text-align: center;
+  }
