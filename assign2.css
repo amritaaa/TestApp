@@ -1,0 +1,38 @@
+.container{
+    width:500px;
+    height: 500px;
+    margin:20px;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    animation-name: boxOpen;
+    transition-duration: 5s;
+    transition-property: all;
+}
+
+@keyframes boxOpen {
+    from{
+
+    }to{
+
+    }
+    
+}
+
+#content1:hover{
+    background-color: red;
+    transform: rotate(90deg);
+}
+#content:hover{
+    transform: rotate(90deg);
+}
+#content2{
+    background-color: yellow;
+}
+#content3{
+    background-color: blue;
+}
+#content4{
+    background-color: green;
+}
